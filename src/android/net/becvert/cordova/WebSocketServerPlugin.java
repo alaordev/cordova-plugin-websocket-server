@@ -213,6 +213,7 @@ public class WebSocketServerPlugin extends CordovaPlugin {
                         if (wsserver != null) {
                             wsserver.send(uuid, msg);
                         }
+                        callbackContext.success();
                     }
                 });
             } else {
